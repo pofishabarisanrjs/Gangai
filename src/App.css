@@ -1,0 +1,411 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+}
+.section1bg{
+  position: relative;
+  width: 100%;
+  height: 640px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(image/2.png);
+}
+.fontdesign{
+  font-family: "Montserrat", serif;
+  text-align: left;
+}
+.fontdesign1{
+  font-family: "Montserrat", serif;
+  text-align: center;
+}
+.headingcss{
+  font-weight: 600;
+  font-size: 25px;
+}
+.section2bg{
+  background-color: hsl(153.4deg 38.34% 50.39%);
+padding: 10px;
+}
+.pgwhite{
+  background-color: hsl(0deg 0% 94.9%);
+  padding: 20px 0px;
+}
+.aboutheaddesign{
+  font-family: "Montserrat", serif;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+.readmorebtn{
+  background-color: hsl(0deg 0% 32.55%) !important;
+  font-family: "Montserrat", serif !important;
+  font-weight: 500 !important;
+}
+.smallheading{
+  font-weight: 500;
+  font-size: 25px;
+}
+.aboutbutton{
+  padding-top: 20px;
+}
+.pgwhite1{
+  background-color: hsl(0deg 0% 97.65%);
+  padding: 20px;
+}
+.out1{
+  background-color: hsl(87.38deg 97.99% 39.02%);
+}
+.wth-100{
+  width: 100%;
+}
+.out2{
+  background-color: hsl(86.73deg 48.79% 59.41%);
+ }
+.out3{
+  background-color: hsl(186.95deg 95.35% 33.73%);
+}
+.no-padding-right {
+  padding-right: 0 !important;
+}
+.no-padding-left {
+  padding-left: 0 !important;
+}
+.centre{
+  padding-left: 40px;
+  padding-top: 40px;
+}
+.lorem{
+  background-color: #fff;
+  padding: 20px;
+ align-self: center;
+}
+.video{
+  background-color: #fff;
+  padding: 20px;
+}
+.section4bg{
+  background-color:hsl(0deg 0% 94.51%);
+  padding: 10px;
+  border: none;
+}
+.sec-4-heading{
+  text-align: center;
+}
+.button-sec4{
+  text-align: center;
+}
+.section-details{
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+.tab{
+  padding: 20px;
+}
+.section3bg{
+  background-color:  rgb(76, 133, 76);
+  padding-top: 20px;
+}
+.tabbutton{
+  text-align: center;
+  padding-top: 30px;
+}
+.Section5bg{
+  background-color: hsl(87.84deg 98.71% 69.61%);
+  width: 100%;
+}
+.section6bg{
+  background-color: hsl(153.4deg 38.34% 50.39%);
+  width: 100%;
+  text-align: center;
+  padding: 50px;
+}
+.section7bg{
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+}
+.sec6link{
+  padding-top: 10px;
+}
+.aboutheaddesign1{
+  font-family: "Montserrat", serif;
+  font-size: 40px;
+  text-align: left; 
+  font-weight: 700;
+}
+.posabs{
+  position: absolute;
+  top: 400px;
+}
+.margtop{
+  margin-top: 220px;
+}
+.tab .nav-tabs {
+  /* border-radius: 20px;  */
+  border: none;
+  
+}
+.tab .nav-item .nav-link {
+  border-radius: 20px; 
+  color: #000; 
+  font-family: "Montserrat", serif;
+font-size: 15px;
+}
+.tab .nav-item .nav-link.active {
+  background-color: hsl(105.94deg 59.26% 42.35%); 
+  color: white; 
+  font-family: "Montserrat", serif;
+  font-weight: 600;
+  font-size: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Shadow effect */
+border: none;
+}
+.tab .nav-item .nav-link:hover {
+  border-color: transparent
+}
+.custom-toggle {
+  border-color: white !important;
+}
+
+.custom-toggle .navbar-toggler-icon {
+  filter: invert(1);
+}
+
+.sec5-logo{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.fw-bolder{
+  font-size: 24px;
+}
+.card-shadow {
+  border-radius: 12px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 4px 16px rgba(0, 0, 0, 0.15); 
+  transition: box-shadow 0.3s ease, transform 0.3s ease; 
+}
+.card-shadow:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15), 0 6px 24px rgba(0, 0, 0, 0.2); 
+  transform: translateY(-5px); 
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Shadow effect */
+
+}
+.tabdesign{
+  width: 40%;
+  justify-content: center;
+  align-self: center;
+}
+
+.custome-navbar {
+  animation: fadeInDown 0.8s ease-in-out;
+}
+
+
+.navbar-nav .nav-link {
+  position: relative;
+  transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ffcc00 !important;
+  transform: translateY(-3px);
+}
+
+.custom-toggle {
+  transition: transform 0.4s ease-in-out;
+}
+
+.custom-toggle.collapsed {
+  transform: rotate(0);
+}
+
+.custom-toggle:not(.collapsed) {
+  transform: rotate(90deg);
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.readmore{
+  font-weight: 600 !important;
+}
+.marhead{
+  margin:50px 0px;
+}
+
+/* About.css */
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply animations */
+.text-animation {
+  animation: fadeInLeft 1s ease-in-out;
+}
+
+.image-animation {
+  animation: fadeInRight 1s ease-in-out;
+}
+
+.aboutbutton button {
+  transition: transform 0.3s ease-in-out;
+}
+
+.aboutbutton button:hover {
+  transform: scale(1.1);
+}
+
+/* Footer.css */
+
+/* Fade-in animation for the footer */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+footer {
+  animation: fadeInUp 1s ease-in-out;
+}
+
+/* Add spacing between list items */
+ul.list-unstyled li {
+  margin-bottom: 10px; /* Adjust spacing between li items */
+}
+
+/* Hover effect on links */
+ul.list-unstyled li a {
+  transition: color 0.3s ease-in-out, text-decoration 0.3s ease-in-out;
+}
+
+ul.list-unstyled li a:hover {
+  color: #ffcc00; /* Change text color */
+  text-decoration: underline; /* Underline on hover */
+}
+
+/* Image hover effect */
+.text-center img {
+  transition: transform 0.4s ease-in-out;
+}
+
+.text-center img:hover {
+  transform: scale(1.1);
+}
+@keyframes rotateAnimation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.rotate-img {
+  animation: rotateAnimation 4s linear infinite;
+}
+
+
+@media (max-width: 767px) and (min-width: 320px) {
+  .custome-navbar {
+    padding: 10px 15px;
+  }
+
+  .navbar-brand img {
+    width: 80px; /* Adjust logo size */
+    height: auto;
+  }
+
+  .custom-toggle {
+    border-color: white !important;
+  }
+
+  .custom-toggle .navbar-toggler-icon {
+    filter: invert(1);
+  }
+
+  .navbar-nav {
+    text-align: center; /* Center align nav items */
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 14px; /* Reduce font size */
+  }
+
+  .navbar-collapse {
+    background-color: rgba(0, 0, 0, 0.8); /* Dark background for better visibility */
+    padding: 10px;
+    border-radius: 10px;
+  }
+  .posabs{
+    position: inherit;
+  }
+  .margtop{
+    margin-top: 20px;
+  }
+  .aboutheaddesign1{
+    text-align: center;
+    font-size: 24px;
+  }
+  .fontdesign{
+    text-align: center;
+  }
+  .no-padding-right {
+    padding-right: calc(var(--bs-gutter-x) * .5) !important;
+  }
+  .no-padding-left {
+    padding-left: calc(var(--bs-gutter-x) * .5) !important;
+  }
+  .smallheading{
+    font-size: 18px;
+
+  }
+}
+
