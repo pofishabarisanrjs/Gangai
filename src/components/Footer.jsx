@@ -1,6 +1,5 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import { FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
 import "animate.css"; // Import animate.css
 import base2 from '../image/base2.jpg';
 
@@ -15,10 +14,10 @@ const Footer = () => {
             <Col md={3} className="text-md-start">
               <h5 className="animate__animated animate__fadeInLeft">Quick Links</h5>
               <ul className="list-unstyled text-white">
-                <li><a href="#" className="text-white text-decoration-none animate__animated animate__pulse animate__delay-1s">Home</a></li>
-                <li><a href="#" className="text-white text-decoration-none animate__animated animate__pulse animate__delay-2s">Services</a></li>
-                <li><a href="#" className="text-white text-decoration-none animate__animated animate__pulse animate__delay-3s">About Us</a></li>
-                <li><a href="#" className="text-white text-decoration-none animate__animated animate__pulse animate__delay-4s">Privacy Policy</a></li>
+                <li><a href="#home" className="text-white text-decoration-none animate__animated animate__pulse animate__delay-1s">Home</a></li>
+                <li><a href="#home" className="text-white text-decoration-none animate__animated animate__pulse animate__delay-2s">Services</a></li>
+                <li><a href="#home" className="text-white text-decoration-none animate__animated animate__pulse animate__delay-3s">About Us</a></li>
+                <li><a href="#home" className="text-white text-decoration-none animate__animated animate__pulse animate__delay-4s">Privacy Policy</a></li>
               </ul>
             </Col>
 
@@ -26,10 +25,10 @@ const Footer = () => {
             <Col md={3} className="text-md-start text-white">
               <h5 className="animate__animated animate__fadeInLeft animate__delay-1s">Support</h5>
               <ul className="list-unstyled text-white">
-                <li><a href="#" className="text-white text-decoration-none animate__animated animate__pulse animate__delay-1s">FAQs</a></li>
-                <li><a href="#" className="text-white text-decoration-none animate__animated animate__pulse animate__delay-2s">Help Center</a></li>
-                <li><a href="#" className="text-white text-decoration-none animate__animated animate__pulse animate__delay-3s">Terms & Conditions</a></li>
-                <li><a href="#" className="text-white text-decoration-none animate__animated animate__pulse animate__delay-4s">Contact Support</a></li>
+                <li><a href="#home" className="text-white text-decoration-none animate__animated animate__pulse animate__delay-1s">FAQs</a></li>
+                <li><a href="#home" className="text-white text-decoration-none animate__animated animate__pulse animate__delay-2s">Help Center</a></li>
+                <li><a href="#home" className="text-white text-decoration-none animate__animated animate__pulse animate__delay-3s">Terms & Conditions</a></li>
+                <li><a href="#home" className="text-white text-decoration-none animate__animated animate__pulse animate__delay-4s">Contact Support</a></li>
               </ul>
             </Col>
 

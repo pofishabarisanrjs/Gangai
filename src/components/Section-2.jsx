@@ -13,17 +13,17 @@ function Section2bg() {
        <div className='section2bg'>
         <Container>
             <div className="pgwhite posabs">
-                <Container>
-                    <About/>
+                <Container id="about">
+                    <About />
 
                 </Container>
                 
             </div>
-            <div className="pgwhite1 margtop">
+            <div className="pgwhite1 margtop" id="project">
             <Ourheading/>
             <Ourproject/>
                 </div>
-                <div className="pgwhite1">
+                <div className="pgwhite1" id="service">
                 <Ourservice/>
             
                 </div>

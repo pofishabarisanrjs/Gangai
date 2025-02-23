@@ -1,4 +1,3 @@
-import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 
@@ -7,9 +6,9 @@ import group from '../image/Group 130.png';
 const navItems = [
   { href: "#Home", label: "Home" },
   { href: "#about", label: "About" },
-  { href: "#service", label: "Services" },
   { href: "#project", label: "Project" },
-  { href: "#Contact", label: "Contact" },
+  { href: "#service", label: "Services" },
+  { href: "#contact", label: "Contact" },
 ];
 
 function NavHeader() {
