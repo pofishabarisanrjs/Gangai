@@ -1,7 +1,8 @@
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-
-import group from '../image/Group 130.png';
+import React, { useState, useEffect } from "react";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
+import group from "../image/Group 130.png";
+import Container from "react-bootstrap/esm/Container";
 
 const navItems = [
   { href: "#Home", label: "Home" },
@@ -12,21 +13,60 @@ const navItems = [
 ];
 
 function NavHeader() {
+  const [bgColor, setBgColor] = useState("transparent");
+  const [textColor, setTextColor] = useState("white");
+
+  const changeNavStyle = () => {
+    if (window.scrollY > 0) {
+      setBgColor('rgba(0, 0, 0, 0.4)'); // 40% opacity black
+    } else {
+      setBgColor("transparent");
+      setTextColor("white");
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", changeNavStyle);
+    return () => {
+      window.removeEventListener("scroll", changeNavStyle);
+    };
+  }, []);
+
   return (
-    <Navbar collapseOnSelect expand="lg" className="custome-navbar" sticky="top">
+    <Navbar
+      collapseOnSelect
+      expand="lg"
+      className="custome-navbar"
+      fixed="top"
+      style={{
+        backgroundColor: bgColor,
+        transition: "background-color 0.3s, color 0.3s",
+      }}
+      
+    >
+      <Container>
         <Navbar.Brand href="#home">
           <img src={group} alt="logo" title="logo" width="100" height="90" />
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" className="custom-toggle text-white" />
+        <Navbar.Toggle
+          aria-controls="responsive-navbar-nav"
+          className="custom-toggle"
+        />
         <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="mx-auto gap-5">
+          <Nav className="mx-auto">
             {navItems.map((item, index) => (
-              <Nav.Link key={index} href={item.href} className="text-white fontdesign">
+              <Nav.Link
+                key={index}
+                href={item.href}
+                className="fontdesign ms-3"
+                style={{ color: textColor }}
+              >
                 {item.label}
               </Nav.Link>
             ))}
           </Nav>
         </Navbar.Collapse>
+      </Container>
     </Navbar>
   );
 }

@@ -3,7 +3,7 @@ import 'animate.css';
 
 function Lorem() {
   return (
-    <Container>
+    <Container id='contact'>
       <div className="pgwhite">
         <h2 className="text-center headingcss fontdesign animate__animated animate__fadeInDown">
           Contact Us

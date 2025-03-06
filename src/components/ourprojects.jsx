@@ -14,7 +14,7 @@ function OurProject() {
   ];
 
   return (
-    <Row className="row-gap-3">
+    <Row className="row-gap-3 px-md-5">
       {projects.map((project, index) => (
         <Col key={index} md={4}>
           <Card 

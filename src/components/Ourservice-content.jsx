@@ -11,9 +11,9 @@ function Outcontent() {
   return (
     <Container>
       <div className="fontdesign">
-        <Row>
-          <Col className="no-padding-right">
-            <div className="out1 p-5 text-center animate__animated animate__fadeInLeft">
+        <Row className="g-0">
+          <Col  md={4} >
+            <div className="out1 pt-5 text-center animate__animated animate__fadeInLeft">
               <Card.Img
                 variant="left"
                 src={drill}
@@ -34,8 +34,8 @@ function Outcontent() {
             </div>
           </Col>
 
-          <Col className="p-md-0">
-            <div className="out2 p-5 text-center animate__animated animate__fadeInUp">
+          <Col  md={4} >
+            <div className="out2 pt-5 text-center animate__animated animate__fadeInUp">
               <Card.Img
                 variant="left"
                 src={drilling}
@@ -56,8 +56,8 @@ function Outcontent() {
             </div>
           </Col>
 
-          <Col className="no-padding-left">
-            <div className="out3 p-5 text-center animate__animated animate__fadeInRight">
+          <Col  md={4}>
+            <div className="out3 pt-5 text-center animate__animated animate__fadeInRight">
               <Card.Img
                 variant="left"
                 src={well}

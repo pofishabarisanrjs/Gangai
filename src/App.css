@@ -56,15 +56,19 @@ padding: 10px;
 }
 .out1{
   background-color: hsl(87.38deg 97.99% 39.02%);
+  min-height: 400px;
+
 }
 .wth-100{
   width: 100%;
 }
 .out2{
   background-color: hsl(86.73deg 48.79% 59.41%);
+  min-height: 400px;
  }
 .out3{
   background-color: hsl(186.95deg 95.35% 33.73%);
+  min-height: 400px;
 }
 .no-padding-right {
   padding-right: 0 !important;
@@ -105,7 +109,7 @@ padding: 10px;
   padding: 20px;
 }
 .section3bg{
-  background-color:  rgb(76, 133, 76);
+  background-color: hsl(153.4deg 38.34% 50.39%);
   padding-top: 20px;
 }
 .tabbutton{
@@ -140,9 +144,10 @@ padding: 10px;
 .posabs{
   position: absolute;
   top: 400px;
+  width: calc(1320px - 1.5rem);
 }
 .margtop{
-  margin-top: 220px;
+  margin-top: 420px;
 }
 .tab .nav-tabs {
   /* border-radius: 20px;  */
@@ -351,7 +356,48 @@ ul.list-unstyled li a:hover {
 .rotate-img {
   animation: rotateAnimation 4s linear infinite;
 }
-
+@media (max-width: 1400px) {
+  .posabs{
+    width: calc(1140px - 1.5rem);
+  }
+  .margtop{
+    margin-top: 320px;
+  }
+}
+@media (max-width: 1200px) {
+  .posabs{
+    width: calc(960px - 1.5rem);
+  }
+  .margtop{
+    margin-top: 800px;
+  }
+}
+@media (max-width: 993px) {
+  .posabs{
+    width: calc(720px - 1.5rem);
+  }
+  .margtop{
+    margin-top: 700px;
+  }
+  .aboutheaddesign1 {
+    font-family: "Montserrat", serif;
+    font-size: 28px;
+    text-align: left;
+    font-weight: 700;
+  }
+  .aboutbutton{
+    text-align: center;
+    margin: 10px;
+  }
+}
+@media only screen and (width: 992px) {
+ .posabs{
+  width: 94.35%;
+ }
+ .margtop{
+  margin-top: 750px;
+}
+}
 
 @media (max-width: 767px) and (min-width: 320px) {
   .custome-navbar {
@@ -386,9 +432,10 @@ ul.list-unstyled li a:hover {
   }
   .posabs{
     position: inherit;
+    width: auto;
   }
   .margtop{
-    margin-top: 20px;
+    margin-top: 0px;
   }
   .aboutheaddesign1{
     text-align: center;
@@ -398,10 +445,10 @@ ul.list-unstyled li a:hover {
     text-align: center;
   }
   .no-padding-right {
-    padding-right: calc(var(--bs-gutter-x) * .5) !important;
+    padding-right: inherit !important;
   }
   .no-padding-left {
-    padding-left: calc(var(--bs-gutter-x) * .5) !important;
+    padding-left: inherit !important;
   }
   .smallheading{
     font-size: 18px;
