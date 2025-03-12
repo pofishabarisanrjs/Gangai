@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Container, Tab, Tabs, Modal, Button } from 'react-bootstrap';
+import { Container, Tab, Tabs, Modal } from 'react-bootstrap';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import 'animate.css';
