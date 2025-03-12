@@ -8,9 +8,9 @@ function OurProject() {
   const [hoverIndex, setHoverIndex] = useState(null);
 
   const projects = [
-    { title: 'Chennai', imgSrc: base1, description: 'Some quick example text to build on the card title and make up the bulk of the card\'s content.' },
-    { title: 'Madurai', imgSrc: base1, description: 'Some quick example text to build on the card title and make up the bulk of the card\'s content.' },
-    { title: 'Trichy', imgSrc: base1, description: 'Some quick example text to build on the card title and make up the bulk of the card\'s content.' }
+    { title: 'Chennai', imgSrc: base1, description: 'Some quick example text to build on the card title and make up the bulk of the card\'s contentSome quick example text to build on the card title and make up the bulk of the card\'s content.' },
+    { title: 'Madurai', imgSrc: base1, description: 'Some quick example text to build on the card title and make up the bulk of the card\'s contentSome quick example text to build on the card title and make up the bulk of the card\'s content.' },
+    { title: 'Trichy', imgSrc: base1, description: 'Some quick example text to build on the card title and make up the bulk of the card\'s contentSome quick example text to build on the card title and make up the bulk of the card\'s content.' }
   ];
 
   return (

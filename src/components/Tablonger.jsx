@@ -41,13 +41,13 @@ function Tablonger() {
        
             </Row>
  </Container>
- <div className=" tabbutton"><Container>
+ {/* <div className=" tabbutton"><Container>
       <Row>
         <Col> 
-        <Button variant="success" className='readmore fontdesign'>Read More</Button>
+        <Button variant="success" className='readmore fontdesign'>Load More</Button>
         </Col>
       </Row>
-    </Container></div>
+    </Container></div> */}
     </div>
   );
 }

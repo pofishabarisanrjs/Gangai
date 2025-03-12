@@ -47,16 +47,38 @@ function Button4() {
         >
           <Tab eventKey="home" title="Chennai"> <Container>{renderImages()}
           <div className=" tabbutton"><Container>
-      <Row>
+      {/* <Row>
         <Col>
-        <Button variant="success" className='readmore fontdesign'>Read More</Button>
+        <Button variant="success" className='readmore fontdesign'>Load More</Button>
         </Col>
-      </Row>
+      </Row> */}
     </Container></div>
             </Container> </Tab>
-          <Tab eventKey="profile" title="Madurai"> <Container>{renderImages()}</Container> </Tab>
-          <Tab eventKey="longer" title="Trichy"> <Container>{renderImages()}</Container> </Tab>
-          <Tab eventKey="contact" title="Contact"> <Container>{renderImages()}</Container> </Tab>
+          <Tab eventKey="profile" title="Madurai"> <Container>{renderImages()}
+          <div className=" tabbutton"><Container>
+      {/* <Row>
+        <Col>
+        <Button variant="success" className='readmore fontdesign'>Load More</Button>
+        </Col>
+      </Row> */}
+    </Container></div></Container> 
+          </Tab>
+          <Tab eventKey="longer" title="Trichy"> <Container>{renderImages()}
+          <div className=" tabbutton"><Container>
+      {/* <Row>
+        <Col>
+        <Button variant="success" className='readmore fontdesign'>Load More</Button>
+        </Col>
+      </Row> */}
+    </Container></div></Container> </Tab>
+          <Tab eventKey="contact" title="Contact"> <Container>{renderImages()}
+          <div className=" tabbutton"><Container>
+      {/* <Row>
+        <Col>
+        <Button variant="success" className='readmore fontdesign'>Load More</Button>
+        </Col>
+      </Row> */}
+    </Container></div></Container> </Tab>
         </Tabs>
       </Container>
 

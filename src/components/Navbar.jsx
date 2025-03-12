@@ -15,13 +15,16 @@ const navItems = [
 function NavHeader() {
   const [bgColor, setBgColor] = useState("transparent");
   const [textColor, setTextColor] = useState("white");
+  const [sticky, setSticky] = useState(false);
 
   const changeNavStyle = () => {
     if (window.scrollY > 0) {
-      setBgColor('rgba(0, 0, 0, 0.4)'); // 40% opacity black
+      setBgColor('rgb(0, 0, 0)'); // 40% opacity black
+      setSticky(true);
     } else {
       setBgColor("transparent");
       setTextColor("white");
+      setSticky(false);
     }
   };
 
@@ -36,13 +39,12 @@ function NavHeader() {
     <Navbar
       collapseOnSelect
       expand="lg"
-      className="custome-navbar"
+      className={`custome-navbar ${sticky ? 'sticky-navbar' : ''}`}
       fixed="top"
       style={{
         backgroundColor: bgColor,
         transition: "background-color 0.3s, color 0.3s",
       }}
-      
     >
       <Container>
         <Navbar.Brand href="#home">
@@ -52,8 +54,8 @@ function NavHeader() {
           aria-controls="responsive-navbar-nav"
           className="custom-toggle"
         />
-        <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="mx-auto">
+        <Navbar.Collapse id="responsive-navbar-nav ">
+          <Nav className="ms-auto nav1-size">
             {navItems.map((item, index) => (
               <Nav.Link
                 key={index}

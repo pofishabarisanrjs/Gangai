@@ -10,11 +10,12 @@
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(image/2.png);
+  /* background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(image/2.png); */
 }
 .fontdesign{
   font-family: "Montserrat", serif;
-  text-align: left;
+  text-align: left; 
+ 
 }
 .fontdesign1{
   font-family: "Montserrat", serif;
@@ -143,11 +144,11 @@ padding: 10px;
 }
 .posabs{
   position: absolute;
-  top: 400px;
+  top: 490px;
   width: calc(1320px - 1.5rem);
 }
 .margtop{
-  margin-top: 420px;
+  margin-top: 500px;
 }
 .tab .nav-tabs {
   /* border-radius: 20px;  */
@@ -218,7 +219,7 @@ border: none;
 }
 
 .navbar-nav .nav-link:hover {
-  color: #ffcc00 !important;
+  color: #ffffff !important;
   transform: translateY(-3px);
 }
 
@@ -369,7 +370,7 @@ ul.list-unstyled li a:hover {
     width: calc(960px - 1.5rem);
   }
   .margtop{
-    margin-top: 800px;
+    margin-top: 900px;
   }
 }
 @media (max-width: 993px) {
@@ -377,7 +378,7 @@ ul.list-unstyled li a:hover {
     width: calc(720px - 1.5rem);
   }
   .margtop{
-    margin-top: 700px;
+    margin-top: 790px;
   }
   .aboutheaddesign1 {
     font-family: "Montserrat", serif;
@@ -397,7 +398,17 @@ ul.list-unstyled li a:hover {
  .margtop{
   margin-top: 750px;
 }
+
 }
+@media only screen and (width: 767px) {
+  .posabs{
+   width: 50.35%;
+  }
+  .margtop{
+   margin-top: 750px;
+ }
+ 
+ }
 
 @media (max-width: 767px) and (min-width: 320px) {
   .custome-navbar {
@@ -454,5 +465,87 @@ ul.list-unstyled li a:hover {
     font-size: 18px;
 
   }
+  .section1bg{
+    height: 350px;
+  }
 }
+/* Normal state for the WhatsApp icon */
+.whatsapp-icon {
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+/* Hover effect */
+.whatsapp-icon:hover {
+  transform: scale(1.2); /* This makes the icon grow */
+  filter: brightness(1.3); /* Optional: increases the brightness when hovered */
+}
+/* ReviewCard styling */
+.card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+.card-title {
+  font-weight: bold;
+}
+
+.card-text {
+  font-size: 14px;
+  color: #555555;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+.text-warning {
+  color: gold;
+}
+
+.text-muted {
+  color: #d1d1d1;
+}
+
+.star-rating {
+  font-size: 1.5rem;  /* Adjust the size of the stars */
+}
+.nav1-size{
+  font-size: 20px;
+  font-weight: 500;
+}
+/* For the sticky navbar, change the text color to black on hover */
+/* Default color for navbar items */
+.sticky-navbar .nav-link {
+  color: white !important; /* Ensures text is white by default */
+  position: relative; /* Needed for positioning the underline */
+  transition: color 0.3s ease; /* Smooth transition for text color */
+}
+
+/* When  hovering over the navbar items, add white underline */
+.sticky-navbar .nav-link:hover {
+  color: hsl(0, 0%, 100%) !important; /* Text color remains white on hover */
+}
+
+.sticky-navbar .nav-link:hover::after {
+  content: ''; /* Create the pseudo-element */
+  position: absolute; /* Position it absolutely to the bottom */
+  bottom: -10px; /* Position it at the bottom of the link */
+  left: 0;
+  width: 100%; /* Make the underline span the width of the text */
+  height: 2px; /* Define the height of the underline */
+  background-color: white; /* White underline */
+  transition: background-color 0.3s ease; /* Smooth transition for underline color */
+}
+.corner-wrapper{
+  display: block;
+  overflow: hidden;
+  width: 300px;
+  height: 150px;
+  border-radius: 10px;
+  transform: translateZ(0px);
+  border: 3px solid #eee;
+}
+
+
 

@@ -7,7 +7,9 @@ function Section7bg() {
     
      <div className='section7bg fontdesign'>
         <Container>
-            Privacy - Terms For Us - Site Map
+        <p className="mb-0">
+          &copy; {new Date().getFullYear()} Gangai Borewell. All Rights Reserved.
+        </p>
         </Container>
     
      </div>
